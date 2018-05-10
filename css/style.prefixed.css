@@ -1,0 +1,37 @@
+body {
+  background-color: grey;
+}
+
+body .flex {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .content {
+  background-color: white;
+  border: solid 2px black;
+  width: 80%;
+  height: 400px;
+  margin: 10%;
+}
+
+body .object {
+  background-color: red;
+  border: solid 2px black;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  animation: move 20s infinite;
+}
+
+@keyframes move {
+  from {
+    top: 10px;
+  }
+  to {
+    top: 200px;
+  }
+}
+/*# sourceMappingURL=style.prefixed.css.map */

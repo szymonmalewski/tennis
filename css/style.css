@@ -1,0 +1,37 @@
+body {
+  background-color: grey; }
+  body .container {
+    float: left;
+    display: block;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    margin-right: 30px;
+    font-size: 22px; }
+    body .container p {
+      padding-top: 15px;
+      text-align: center; }
+    body .container label {
+      width: 150px;
+      height: 60px;
+      display: block;
+      margin: 20px 0 0 20px;
+      background-color: #ddd;
+      padding: 10px 20px;
+      font-family: Arial;
+      font-size: 16px;
+      border: 2px solid #444;
+      border-radius: 4px; }
+      body .container label:hover {
+        background-color: #dfd; }
+      body .container label input[type="radio"] {
+        display: none;
+        cursor: pointer; }
+        body .container label input[type="radio"]:checked + label {
+          background-color: #dfd;
+          border-color: #4c4; }
+  body #gameCanvas {
+    margin: 10px auto;
+    display: block;
+    float: left; }
+
+/*# sourceMappingURL=style.css.map */
