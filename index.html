@@ -6,24 +6,104 @@
     <title>title</title>
     <link rel="stylesheet" type="text/css" href="vendor/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
-	<section>
-	<form class="container">
-		<label><p>Easy</p>
-		  <input type="radio" name="selection" class="button1">
-		</label>
-
-		<label><p>Medium</p>
-		  <input type="radio" name="selection" checked="checked" class="button2">
-		</label>
-
-		<label><p>Hard</p>
-		  <input type="radio" name="selection"  class="button3">
-		</label>
-	</form>
-	<canvas id="gameCanvas" width="800" height="600"></canvas>
-</section>
+	<section class="allOfIt">
+		<div class="leftSide">
+			<div class="userInfo">
+				<i class="fas fa-user"></i>
+				<p id="userName">Szymon</p>
+			</div>
+			<form class="container">
+				<label><p>Easy</p>
+					<input type="radio" name="selection" class="button1">
+				</label>
+				<label><p>Medium</p>
+					<input type="radio" name="selection" checked="checked" class="button2">
+				</label>
+				<label><p>Hard</p>
+			  		<input type="radio" name="selection"  class="button3">
+				</label>
+			</form>
+		</div>
+		<div class="midleSide">
+			<div class="containerDiv">
+				<canvas id="gameCanvas" width="800" height="600" ></canvas>
+				<div class="startButton">
+					<label><p>START</p>
+						<input type="radio" name="gameButton" class="gameStart">
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="rightSide">
+			<div class="userInfo">
+				<i class="fas fa-desktop"></i>
+				<p id="computerName">Computer</p>
+			</div>
+			<button class="settings">
+				<i class="fas fa-cog"></i>
+			</button>
+			<div id="settingsOption">
+				<div class="settingsHeader">
+					<h2>Ball color</h2>
+				</div>
+				<form class="ballColorPicker">
+					<label class="color color1">
+						<input name="colorPicker" type="radio" checked="checked"></input>
+					</label>
+					<label class="color color2">
+						<input name="colorPicker" type="radio"></input>
+					</label>
+					<label class="color color3">
+						<input name="colorPicker" type="radio"></input>
+					</label>
+					<label class="color color4">
+						<input name="colorPicker" type="radio"></input>
+					</label>
+					<label class="color color5">
+						<input name="colorPicker" type="radio"></input>
+					</label>
+					<label class="color color6">
+						<input name="colorPicker" type="radio"></input>
+					</label>
+					<label class="color color7">
+						<input name="colorPicker" type="radio"></input>
+					</label>
+					<label class="color color8">
+						<input name="colorPicker" type="radio"></input>
+					</label>
+					<label class="color color9">
+						<input name="colorPicker" type="radio"></input>
+					</label>
+				</form>
+				<div class="settingsHeader">
+					<h2>Background</h2>
+				</div>
+				<div class="backgroundPicker">
+					<label class="background background1">
+						<input name="BackgroundPicker" type="radio" checked="checked"></input>
+					</label>
+					<label name="BackgroundPicker" class="background background2">
+						<input name="BackgroundPicker" type="radio"></input>
+					</label>
+					<label name="BackgroundPicker" class="background background3">
+						<input name="BackgroundPicker" type="radio"></input>
+					</label>
+					<label name="BackgroundPicker" class="background background4">
+						<input name="BackgroundPicker" type="radio"></input>
+					</label>
+				</div>
+			</div>
+		</div>
+	</section>
+		<div class="welcome">
+			<p>Tennis game</p>
+				<input name="searchTxt" type="text" maxlength="512" id="searchTxt" class="searchField"/>
+				<button id="enterButton">Enter</button>
+		</div>
 
     <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"   integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="   crossorigin="anonymous"></script>
